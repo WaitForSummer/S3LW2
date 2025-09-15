@@ -45,11 +45,11 @@ namespace LW2
 
         public static void Task3()
         {
-            string key;
+            string key = "000";
 
             Console.WriteLine("Starting Task3\n");
             Console.WriteLine("Enter your key-actiavtor: ");
-            key = Console.ReadLine();
+            //key = Console.ReadLine();
 
             if (key == "000")
             {
