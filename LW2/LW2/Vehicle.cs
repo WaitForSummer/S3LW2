@@ -23,7 +23,7 @@ namespace LW2
             Console.WriteLine($"Coordiantes:\nx = {x}, y = {y}");
             Console.WriteLine($"Speed: {speed}");
             Console.WriteLine($"Cost: {cost}");
-            Console.WriteLine($"Year: {year}\n");
+            Console.WriteLine($"Year: {year}");
         }
     }
 
@@ -33,6 +33,8 @@ namespace LW2
         public Car(double x, double y, double cost, double speed, int year) : base(x, y, cost, speed, year) {
             base.name = name;
         }
+
+        public override void Print() { base.Print(); Console.WriteLine("\n"); }
     }
 
     public class Plane: Vehicle
@@ -52,7 +54,7 @@ namespace LW2
         {
             base.Print();
             Console.WriteLine($"Height: {height}");
-            Console.WriteLine($"Count of passengers: {countOfPassengers}");
+            Console.WriteLine($"Count of passengers: {countOfPassengers}\n");
         }
     }
 
@@ -73,7 +75,7 @@ namespace LW2
         {
             base.Print();
             Console.WriteLine($"Port name: {portName}");
-            Console.WriteLine($"Count of passengers: {countOfPassengers}");
+            Console.WriteLine($"Count of passengers: {countOfPassengers}\n");
         }
     }
 }

@@ -24,6 +24,10 @@ namespace LW2
             ClassRoom class4 = new ClassRoom(pupil1, pupil2, pupil3, pupil4);
             class4.ShowClassInfo();
 
+            //Console.WriteLine("Press any key to start 2nd task...");
+            //Console.ReadKey();
+            //Console.Clear();
+
         }
 
         public static void Task2()
