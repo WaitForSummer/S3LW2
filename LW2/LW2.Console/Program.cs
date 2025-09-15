@@ -25,9 +25,9 @@ namespace LW2
             ClassRoom class4 = new ClassRoom(pupil1, pupil2, pupil3, pupil4);
             class4.ShowClassInfo();
 
-            //Console.WriteLine("Press any key to start 2nd task...");
-            //Console.ReadKey();
-            //Console.Clear();
+            Console.WriteLine("Press any key to start 2nd task...");
+            Console.ReadKey();
+            Console.Clear();
 
         }
 
@@ -41,6 +41,10 @@ namespace LW2
             car.Print();
             plane.Print();
             ship.Print();
+
+            Console.WriteLine("Press any key to start 3rd task...");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         public static void Task3()
