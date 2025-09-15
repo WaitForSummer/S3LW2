@@ -7,6 +7,7 @@ namespace LW2
     {
         public static void Task1()
         {
+            Console.WriteLine("Starting Task1...\n");
             ExcelentPupil pupil1 = new ExcelentPupil("John Connor", 16, 9);
             GoodPupil pupil2 = new GoodPupil("Arnold notnegr", 30, 12);
             ExcelentPupil pupil3 = new ExcelentPupil("Sara C", 25, 10);
@@ -32,6 +33,7 @@ namespace LW2
 
         public static void Task2()
         {
+            Console.WriteLine("Starting task2...\n");
             Car car = new Car(50, 100, 2500000, 320, 2022);
             Plane plane = new Plane(1000, 500, 15000000, 750, 2015, 3000, 2);
             Ship ship = new Ship(75.5, 99.9, 50000000, 120, 2018, "Victory", 325);
@@ -41,11 +43,44 @@ namespace LW2
             ship.Print();
         }
 
+        public static void Task3()
+        {
+            string key;
+
+            Console.WriteLine("Starting Task3\n");
+            Console.WriteLine("Enter your key-actiavtor: ");
+            key = Console.ReadLine();
+
+            if (key == "000")
+            {
+                DocumentWorker documentWorker = new DocumentWorker();
+                documentWorker.Print();
+                Console.WriteLine("\n");
+            } else if (key == "777")
+            {
+                ProDocumentWorker documentWorker = new ProDocumentWorker();
+                documentWorker.Print();
+                Console.WriteLine("\n");
+            } else if (key == "-1")
+            {
+                ExpertDocumentWorker documentWorker = new ExpertDocumentWorker();
+                documentWorker.Print();
+                Console.WriteLine("\n");
+            } else
+            {
+                DocumentWorker documentWorker = new DocumentWorker();
+                documentWorker.Print();
+                Console.WriteLine("\n");
+            }
+        }
+
         public static void Main(string[] args)
         {
             Task1();
 
             Task2();
+
+            Task3();
         }
     }
 }
